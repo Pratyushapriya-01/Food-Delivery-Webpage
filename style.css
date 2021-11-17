@@ -1,0 +1,222 @@
+/* CSS reset */
+*{
+    margin:0;
+    padding: 0;
+}
+/* css variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* navigation bar */
+#navbar{
+     display: flex;  /*all lines in a row */
+     align-items: center;
+     position: sticky;
+     top:0px;
+     font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Navigation bar- logo and image */
+#logo{
+     margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/* navigation bar:list styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    color: white;
+    list-style: none;  /*no dots will come*/
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 1px 200px;
+    height: 475px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before{
+    content: "";
+    background:url(https://images.squarespace-cdn.com/content/v1/5c5c3833840b161566b02a76/1573133725500-Y5PCN0V04I86HDAT8AT0/WBC_7095.jpg?format=2500w) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family:'Bree Serif', serif;
+    font-size: 35px;
+}
+
+#home p{
+      color: white;
+      text-align: center;
+      font-size: 1.1rem;
+      font-family:'Bree Serif', serif;;
+}
+/* utility class  */
+.h-primary{
+    font-size: 3rem;
+    padding: 15px;
+    font-family:'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 2.1rem;
+    padding: 10px;
+    text-align: center;
+    font-family:'Bree Serif', serif;
+    font-size: 21.5px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: tomato;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+       text-align: center;
+}
+
+/* services section  */
+#services{
+    margin: 35px;
+    display: flex;
+}
+
+#sevices .box{
+    border: 2px solid brown;
+    padding: 40px;
+    margin: 2px 9px;
+    border-radius: 30px;
+    background-color: burlywood;
+}
+
+#sevices .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+#sevices .box p{
+    font-family:'Bree Serif', serif;
+}
+
+/* clients section  */
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background: url(https://image.freepik.com/free-photo/top-view-fresh-fruits-colorful-ripe-wooden-desk-white-background-fruits-color-food-photo_140725-22724.jpg);
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 100px;
+}
+.client-item{
+    padding: 34px;
+}
+
+/* contact section  */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(https://image.shutterstock.com/image-vector/contact-us-call-symbols-social-260nw-1193163277.jpg) no-repeat center center/cover;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    padding: 0.4rem;
+    width: 100%;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family:'Bree Serif', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
